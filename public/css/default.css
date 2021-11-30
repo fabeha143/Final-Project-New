@@ -1,0 +1,366 @@
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+html,body {
+	height: 100%;
+	margin: 0;
+}
+body {
+	font-family: 'Barlow', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	color:#2C2D3F;
+	line-height: 25px;
+	position: relative;
+	background: #fff;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0;
+	font-weight:700;
+	font-family: 'Barlow', sans-serif;
+}
+p {
+    margin: 0;
+	color:#2C2D3F;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+a,button{
+	font-family: 'Barlow', sans-serif;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	font-weight:500;
+	border-radius: 0px;
+}
+button,a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: none;
+	cursor:pointer;
+}
+
+img {
+    max-width: 100%;
+	display:inline-block;
+}
+select:focus,
+select:active {
+    box-shadow: 0;
+    border: 0;
+    outline: 0
+}
+.table {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.table-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+.nav > li > a:focus,
+.nav > li > a:hover {
+    background-color: transparent;
+    text-decoration: none;
+}
+.navbar {
+	margin-bottom: 0;
+	border: 0;
+	padding: 0;
+}
+.mobile-nav{
+	display:none;
+}
+img{
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+}
+input,
+input:focus,
+input:active {
+    outline: none;
+	font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+}
+select{
+    -webkit-appearance: none;
+   -moz-appearance:    none;
+   appearance:         none;
+}
+textarea:focus {
+    outline: none !important;
+    box-shadow: none !important
+}
+
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+/* Theme Button CSS */
+.theme-btn {
+    background: #1A76D1;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 25px 15px 25px;
+    border:2px solid transparent;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+}
+.theme-btn:hover{
+	background: #2C2D3F;
+	color: #fff;
+	border-color: transparent;
+}
+.theme-btn.primary{
+	background: #2C2D3F;
+}
+.theme-btn.primary:hover{
+	background:#1A76D1;
+}
+
+/* Section Title CSS */ 
+.section-title {
+	text-align: center;
+	padding: 0px 60px;
+	margin-bottom: 50px;
+}
+.section-title span {
+	font-size: 15px;
+	color: #1A76D1;
+	margin-bottom: 10px;
+	font-weight: 500;
+	display: inline-block;
+}
+.section-title h3 {
+	color: #2C2D3F;
+	font-size: 40px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.section-title p {
+	color: #666;
+	font-size: 15px;
+}
+.section-img {
+	margin-top: 15px;
+	position:relative;
+}
+.section-img img {
+	width: 35px;
+}
+.section-img::before {
+	position: absolute;
+	content: "";
+	width: 55px;
+	height: 1px;
+	background: #1A76D1;
+	top: 50%;
+	left: 50%;
+	margin-left: -90px;
+}
+.section-img::after {
+	position: absolute;
+	content: "";
+	width: 55px;
+	height: 1px;
+	background: #1A76D1;
+	top: 50%;
+	right: 50%;
+	margin-right: -90px;
+}
+ 
+/* ScrollUP CSS */ 
+#scrollUp {
+	right: 25px;
+	bottom: 50px;
+	color: #fff;
+	font-size: 20px;
+	background: #1A76D1;
+	overflow: hidden;
+	width: 50px;
+	height: 50px;
+	line-height: 48px;
+	text-align: center;
+	border-radius: 10px;
+    box-shadow: 0px 0px 10px #0000001a;
+}
+#scrollUp:hover{
+	background:#535572;
+}
+#scrollUp i {
+	font-size: 25px;
+}
+
+/*Remove bootstrap tab css*/
+.nav-tabs > li > a {
+    border: 0
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+    border: 0;
+    outline: 0
+}
+
+.nav-tabs {
+    border: 0
+}
+
+.nav-tabs > li > a:hover {
+    border: 0
+}
+
+/*navbar css icon*/
+.navbar-toggle .icon-bar {
+    position: relative;
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+    width: 28px;
+}
+.slick-slide {
+    outline: none !important;
+}
+
+/*bootstrap form*/
+.form-control:focus {
+	border-color: #ccc;
+	box-shadow: 0 0 0 ;
+	outline: 0 none;
+}
+
+/* Preloader */
+.preloader{
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    background: #1A76D1;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+}
+
+.loader-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    text-align: center;
+}
+    
+.loader:before {
+    content: '';
+    display: block;
+    width: 4em;
+    height: 4em;   
+    margin: 0 auto 1em;
+    border: 1.5em solid;
+    color: #fff;
+    box-sizing: border-box;
+    animation: 
+        2.37s ShiftRadius,
+        3.57s ShiftColor,
+        2.77s ShiftWidth,
+        2.1s ShiftScale;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+    
+
+@keyframes Spin {
+    100% {
+        transform: rotate(1turn);    
+    }
+}
+
+@keyframes ShiftRadius {
+    50% {
+        border-radius: 50%;
+    }
+}
+
+@keyframes ShiftWidth {
+    50% {
+        border-width: .3em;
+    }
+}
+
+@keyframes ShiftColor {
+    33% {
+        color: #fff;
+    }
+    66% {
+        color: #fff;
+    }
+}
+
+@keyframes ShiftScale {
+    33% {
+        transform: scale(1.1) rotateZ(120deg);
+    }
+    66% {
+        transform: scale(0.9) rotateZ(240deg);
+    }
+    100% {
+        transform: scale(1) rotateZ(360deg);
+    }
+}
+
+
+
+/* video popup waves Animation */
+@-webkit-keyframes waves {
+    0% {
+        -webkit-transform: scale(0.2, 0.2);
+        transform: scale(0.2, 0.2);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+    50% {
+        opacity: 0.9;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    }
+    100% {
+        -webkit-transform: scale(0.9, 0.9);
+        transform: scale(0.9, 0.9);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+}
+@keyframes waves {
+    0% {
+        -webkit-transform: scale(0.2, 0.2);
+        transform: scale(0.2, 0.2);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+    50% {
+        opacity: 0.9;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    }
+    100% {
+        -webkit-transform: scale(0.9, 0.9);
+        transform: scale(0.9, 0.9);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+}
